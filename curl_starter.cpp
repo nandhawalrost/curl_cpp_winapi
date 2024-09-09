@@ -18,7 +18,7 @@ std::string readFileAsString(const std::string& filePath) {
 
 int main() {
     // The cURL command you want to execute
-    const char* curlCommand = "curl -H \"Content-Type: application/json\" --data @body_example.json your_endpoint -o file.txt";
+    const char* curlCommand = "curl -X POST -H \"Content-Type: application/json\" -d @body.json endpoint-url -o file.txt";
 
     // Prepare the process and startup info
     STARTUPINFO si;
